@@ -164,6 +164,17 @@ button:focus,
     text-align: center;
 }
 
+.about-profile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-profile ul li {
+    margin: 0;
+    padding: 0;
+}
+
 .sun {
     animation-duration: 4s;
     animation-name: color-change;
