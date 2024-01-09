@@ -241,6 +241,9 @@ button:focus,
         position: relative;
         right:40px; 
     }
+    .logo {
+        height: 110px;
+    }
     .grid {
         grid-template-columns: 1fr;
     }   
