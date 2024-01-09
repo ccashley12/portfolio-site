@@ -254,8 +254,21 @@ button:focus,
     }
 
 }
-
 @media all and (max-width: 500px) {
+    .page-header {
+        display: block; 
+    }
+    .navigation-list {
+        text-align:center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .profile_portrait {
+        float: none;
+        margin: 0 auto;
+        position: relative;
+        right:40px; 
+    }
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
