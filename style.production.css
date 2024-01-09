@@ -269,6 +269,9 @@ button:focus,
         position: relative;
         right:40px; 
     }
+    .logo {
+        height: 110px;
+    }
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
