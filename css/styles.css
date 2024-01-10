@@ -224,7 +224,7 @@ button:focus,
         transform: scale(1.05);
         cursor: pointer;
     }
-
+    
 }
 @media all and (max-width: 500px) {
     .page-header {
