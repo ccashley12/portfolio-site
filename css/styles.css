@@ -205,6 +205,11 @@ button:focus,
     text-align: center;
 }
 
+.error-message {
+    color: red;
+    font-size: 0.8em;
+}
+
 @supports (display: grid) {
     .grid {
         display: grid;
