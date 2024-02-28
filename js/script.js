@@ -42,7 +42,8 @@
     }
 
     function validateForm() {
-        return validateEmail();
+        let isValidEmail = validateEmail();
+        return isValidEmail();
     }
 
     form.addEventListener('submit', (e) => {
