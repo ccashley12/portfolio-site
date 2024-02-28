@@ -51,7 +51,8 @@
         if (validateForm()) {
             alert('Success!');
         }
-    })
+    });
 
     emailInput.addEventListener('input', validateEmail);
+
 })();
