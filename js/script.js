@@ -28,12 +28,12 @@
             return false;
         }
 
-        if (validateEmail.indexOf('@') === -1) {
+        if (value.indexOf('@') === -1) {
             showErrorMessage(emailInput, 'You must enter a valid email address!');
             return false;   
         }
 
-        if (validateEmail.indexOf('.') === -1) {
+        if (value.indexOf('.') === -1) {
             showErrorMessage(emailInput, 'You must enter a valid email address!');
             return false;
         }
@@ -49,7 +49,7 @@
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         if (validateForm()) {
-            alert('Success!');
+            alert('Success! I will be in touch soon so stay tuned!');
         }
     });
 
