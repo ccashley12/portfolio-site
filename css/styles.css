@@ -108,6 +108,8 @@ button:focus,
     display: flex;
     width: 100%;
     padding: 20px;
+    justify-content: space-between;
+    position: relative;
 }
 
 .page-header_item {
