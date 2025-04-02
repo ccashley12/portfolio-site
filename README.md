@@ -145,7 +145,7 @@ As a web developer, I’ve worked on a variety of projects, leveraging a range o
 
 I’m always open to collaboration, freelance work, or just connecting with fellow web enthusiasts. If you're interested in working together or have any questions, feel free to reach out to me through any of the following:
 
-- **Contact me** via [Email](ccashley12@gmail.com)
+- **Contact me** via [Email](mailto:ccashley12@gmail.com)
 - **GitHub**: [ccashley12 GitHub](https://github.com/ccashley12)
 
 Looking forward to connecting with you!
