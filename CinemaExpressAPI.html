@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Christopher's Portfolio Webpage, showcasing my work and progress during CareerFoundry course">
+        <title>Christopher's Portfolio - CinemaExpress API</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div class="container">
+                <!-- Hamburger Menu (Mobile) -->
+                <button id="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="main-navigation page-header__item" aria-label="Main Navigation">
+                    <ul role="menubar" class="navigation-list">
+                        <li role="presentation">
+                            <a href="./index.html" role="menuitem" class="navigation-list__item">Home</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="./about.html" role="menuitem" class="navigation-list__item">About </a>
+                        </li>
+                        <li role="presentation" class="nav-dropdown">
+                            <a href="./work.html" role="menuitem"
+                                class="navigation-list__item navigation-list__item--active"
+                                aria-current="page">My Work</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Pokedex.html">Pokedex</a></li>
+                                <li><a href="CinemaExpress.html">CinemaExpress</a></li>
+                                <li><a href="CinemaExpressAPI.html">CinemaExpress API</a></li>
+                                <li><a href="LinkUp.html">LinkUp</a></li>
+                                <li><a href="PING.html">PING</a></li>
+                                <li><a href="Flix.html">Flix</a></li>
+                            </ul>
+                        </li>
+                        <li role="presentation">
+                            <a href="./contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="project-sg-page">
+            <div class="container">
+                <h1>CinemaExpress API</h1>
+                <h2>A RESTful API for managing movies and users information</h2>
+                <p>CinemaExpress database is a RESTful API built with Node.js, Express, MongoDB, and Passport for handling user authentication and managing movies, users, and their favorites. The API allows for user registration, login, and CRUD operations on movies and user profiles.</p>
+                <div class="project-container">
+                    <div class="project-item project-img">
+                        <img src="img/CinemaExpressAPI.png" alt="Screenshot of CinemaExpress database" />
+                    </div>
+                    <div class="project-item project-descr">
+                        <div class="project-inner">
+                            <h3>Project Objective</h3>
+                            <p>The goal of CinemaExpress API is to provide a structured and scalable backend that supports:</p>
+                            <ul role="list">
+                                <li role="listitem">RESTful endpoints that integrate seamlessly with the CinemaExpress frontend</li>
+                                <li role="listitem">Cross-origin support for external clients via CORS</li>
+                                <li role="listitem">Efficient database management using MongoDB and Mongoose
+
+                                </li>
+                                <li role="listitem">Secure user authentication and authorization with JWT and Passport.js</li>
+                                <li role="listitem">CRUD operations for managing movies, users, and favorites
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-inner">
+                            <h3>Technology Behind CinemaExpress API</h3>
+                            <ul role="list">
+                                <li role="listitem"><span>NODE.JS [&] Express</span> - Backend framework for handling requests</li>
+                                <li role="listitem"><span>JWT [&] PASSPORT.JS</span> - Secure authentication and user sessions</li>
+                                <li role="listitem"><span>MONGODB [&] MONGOOSE</span> - NoSQL database for storing movie/user data</li>
+                                <li role="listitem"><span>MONGODB ATLAS</span> - Cloud database hosting</li>
+                                <li role="listitem"><span>CORS</span> - Enables cross-origin API access</li>
+                                <li role="listitem"><span>HEROKU</span> - Deployment and hosting of the API
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-inner">
+                            <h3>Challenges [&] Growth</h3>
+                            <p>Developing the CinemaExpress API was the first project starting backend development. Previously, my experience was only with front-end technologies, so building a RESTful API from scratch was both challenging and enlightening. I gained a deeper understanding of server-side operations, database management, and the intricacies of user authentication. This project definitely expanded my technical skill for handling backend tasks.</p>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <div class="button__link project__button">
+                            <a href="https://github.com/ccashley12/movie_api" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View the CinemaExpress API source code on GitHub">CinemaExpress API on GitHub</a>
+                        </div>
+                        <div class="button__link project__button">
+                            <a href="https://cinema-express-948d60ca8d20.herokuapp.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Visit the live CinemaExpress API">Live API</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <p>Find me on</p>
+            <div class="social-media">
+                <a href="https://github.com/ccashley12" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"
+                        alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"
+                    rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
