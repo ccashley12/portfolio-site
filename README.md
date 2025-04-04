@@ -52,7 +52,7 @@ movie_api is a **RESTful API** built with **Node.js**, **Express**, **MongoDB**,
 
 ### **CinemaExpress-Client (React-based SPA)**
 
-CinemaExpress' frontend is a **React-based Single Page Application (SPA)** designed for movie lovers. Users can browse a curated list of movies, save their favorites, and learn more about directors and actors, especially within the martial arts genre.
+CinemaExpress' frontend is a **React-based Single Page Application (SPA)** designed for movie lovers. Users can browse a curated list of movies, save their favorites, and learn more about directors or genres.
 
 **Key Features**:
 
@@ -64,9 +64,9 @@ CinemaExpress' frontend is a **React-based Single Page Application (SPA)** desig
 
 ---
 
-### **Meet Up App**
+### **LinkUp App**
 
-A **serverless Progressive Web Application (PWA)** built with React. Meet Up helps users discover local events in specific cities. It integrates seamlessly with a real-time event API to provide an up-to-date list of happenings near you.
+A **serverless Progressive Web Application (PWA)** built with React. LinkUp helps users discover local events in specific cities. It integrates seamlessly with a real-time event API to provide an up-to-date list of happenings near you.
 
 **Key Features**:
 
@@ -78,9 +78,9 @@ A **serverless Progressive Web Application (PWA)** built with React. Meet Up hel
 
 ---
 
-### **Meet App**
+### **PING App**
 
-A **React Native** chat application built using Expo, Firebase, and the Gifted Chat library. *Meet* provides a user-friendly interface for sending text messages, images, location data, and audio recordings. It supports offline message storage and is designed with accessibility in mind.
+A **React Native** chat application built using Expo, Firebase, and the Gifted Chat library. *PING* provides a user-friendly interface for sending text messages, images, location data, and audio recordings. It supports offline message storage and is designed with accessibility in mind.
 
 **Key Features**:
 
@@ -94,7 +94,7 @@ A **React Native** chat application built using Expo, Firebase, and the Gifted C
 
 ---
 
-### **CinemaExpress-Angular**
+### **Flix App**
 
 A **movie app** built with **Angular** that provides users with details on various movies, directors, and genres. Users can register, log in, and create a list of their favorite movies.
 
