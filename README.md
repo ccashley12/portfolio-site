@@ -33,7 +33,7 @@ A fun and simple JavaScript project that allows users to display detailed inform
 
 ---
 
-### **movie_api (API)**
+### **CinemaExpress**
 
 movie_api is a **RESTful API** built with **Node.js**, **Express**, **MongoDB**, and **Passport** for handling user authentication and managing movies, users, and their favorites. The API allows for user registration, login, and CRUD operations on movies and user profiles.
 
