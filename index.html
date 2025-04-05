@@ -3,39 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Christopher Ashley Full-Stack Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Christopher's Portfolio Webpage, showcasing my work and progress during the CareerFoundry course">
+    <title>Christopher's portfolio - Homepage</title>
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Marcellus&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <header class="page-header">
-        <div class="logo">
-            <img src="img/christopher-ashley-logo.png" alt="logo"
-                style="width: auto; height: auto;max-width: 300px;max-height: 300px">
+        <div class="container">
+            <!-- Hamburger Menu (Mobile) -->
+            <button id="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="main-navigation page-header__item" aria-label="Main Navigation">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="./index.html" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="./about.html" role="menuitem" class="navigation-list__item">About </a>
+                    </li>
+                    <li role="presentation" class="nav-dropdown">
+                        <a href="./work.html" role="menuitem"
+                            class="navigation-list__item navigation-list__item--active"
+                            aria-current="page">My Work</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Pokedex.html">Pokedex</a></li>
+                            <li><a href="CinemaExpress.html">CinemaExpress</a></li>
+                            <li><a href="CinemaExpressAPI.html">CinemaExpress API</a></li>
+                            <li><a href="LinkUp.html">LinkUp</a></li>
+                            <li><a href="PING.html">PING</a></li>
+                            <li><a href="Flix.html">Flix</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation">
+                        <a href="./contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="main-navigation page-header_item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem"
-                        class="navigation-list_item navigation-list_item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list_item">My Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <div class="profile">
         <img src="img/selfportrait.jpeg" class="profile_portrait" alt="Christopher Ashley Portrait">
