@@ -18,6 +18,7 @@
 <body>
     <header class="page-header">
         <div class="container">
+            <img id="theme-logo" src="img/christopher-ashley-logo.png" alt="Christopher's personal logo" class="logo page-header__item">
             <!-- Hamburger Menu (Mobile) -->
             <button id="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation">
                 <span class="bar"></span>
@@ -52,21 +53,32 @@
             </nav>
         </div>
     </header>
-    <div class="profile">
-        <img src="img/selfportrait.jpeg" class="profile_portrait" alt="Christopher Ashley Portrait">
-        <h1>Hello World</h1>
-        <p>My name is Christopher Ashley. I am a soon to be <span>Web</span> Developer in the US.
-        </p>
-        <a href="#">Check out some of my code!</a>
-        <button type="button">Check out some of my code!</button>
-    </div>
+    <main class="home-page">
+        <div class="container">
+            <h1>Hey there! Welcome to my website!</h1>
+            <div class="profile">
+                <div class="profile__portrait">
+                    <img src="img/selfportrait.jpeg" alt="Profile Picture of Christopher" class="christopher_img">
+                </div>
+                <div class="profile__text">
+                    <p>I am creative and innovative Full-stack Web Developer with a passion for designing beautiful websites while making sure they can help users get the job done! Let's make it click!</p>
+                </div>
+                <div class="profile__button button__link">
+                    <a href="https://github.com/ccashley12" target="_blank"
+                        aria-label="Visit Christopher's GitHub profile">Take a look at my projects on GitHub!</a>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="https://github.com/ccashley12" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"
-                    alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"
-                rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <div class="container">
+            <p>Find me on</p>
+            <div class="social-media">
+                    <a href="https://github.com/ccashley12" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"
+                            alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"
+                        rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+            </div>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
