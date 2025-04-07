@@ -44,6 +44,63 @@ h1 (Gloock 400)
 	--small-mp: 5px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    color: var(--darker-font-color);
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+}
+
+.container {
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main {
+	margin: var(--standard-margin);
+	flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--primary-font);
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+h1 {
+	font-size: var(--h1);
+	font-weight: 700;
+}
+
+h2 {
+	font-size: var(--h2);
+}
+
+h3 {
+	font-size: var(--h3);
+}
+
+h4 {
+	font-size: var(--h4);
+}
+
+h5 {
+	font-size: var(--h5);
+	margin-bottom: 0;
+}
+
 a {
 	color: var(--secondary-color);
 	border-bottom: 1px solid;
@@ -69,23 +126,6 @@ a:active {
 
 .hidden {
 	display: none;
-}
-
-body {
-    background-color: var(--primary-color);
-    font-family: var(--primary-font);
-    color: var(--darker-font-color);
-    font-weight: var(--body-font-weight);
-    font-size: var(--body-font-size);
-    line-height: var(--body-line-height);
-}
-
-h1 {
-    color: var(--h1-font-color);
-    font-family: var(--secondary-font);
-    font-weight: var(--h1-font-weight);
-    font-size: var(--h1-font-size);
-    line-height: var(--h1-line-height);
 }
 
 button,
@@ -132,50 +172,6 @@ button:focus,
 button:active,
 .button__link:active {
 	box-shadow: none;
-}
-
-.container {
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-main {
-	margin: var(--standard-margin);
-	flex: 1;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--primary-font);
-	letter-spacing: 2px;
-	text-align: center;
-}
-
-h1 {
-	font-size: var(--h1);
-	font-weight: 700;
-}
-
-h2 {
-	font-size: var(--h2);
-}
-
-h3 {
-	font-size: var(--h3);
-}
-
-h4 {
-	font-size: var(--h4);
-}
-
-h5 {
-	font-size: var(--h5);
-	margin-bottom: 0;
 }
 
 /* HEADER */
@@ -304,7 +300,6 @@ h5 {
 }
 
 * {
-    -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 
