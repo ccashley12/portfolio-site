@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Christopher's Portfolio Webpage, showcasing my work and progress during CareerFoundry course">
+        <title>Christopher's Portfolio - CinemaExpress</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div class="container">
+                <img id="theme-logo" src="img/christopher-ashley-logo.png" alt="Christopher's personal logo" class="logo page-header__item">
+                <!-- Hamburger Menu (Mobile) -->
+                <button id="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="main-navigation page-header__item" aria-label="Main Navigation">
+                    <ul role="menubar" class="navigation-list">
+                        <li role="presentation">
+                            <a href="./index.html" role="menuitem" class="navigation-list__item">Home</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="./about.html" role="menuitem" class="navigation-list__item">About </a>
+                        </li>
+                        <li role="presentation" class="nav-dropdown">
+                            <a href="./work.html" role="menuitem"
+                                class="navigation-list__item navigation-list__item--active"
+                                aria-current="page">My Work</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Pokedex.html">Pokedex</a></li>
+                                <li><a href="CinemaExpress.html">CinemaExpress</a></li>
+                                <li><a href="CinemaExpressAPI.html">CinemaExpress API</a></li>
+                                <li><a href="LinkUp.html">LinkUp</a></li>
+                                <li><a href="PING.html">PING</a></li>
+                                <li><a href="Flix.html">Flix</a></li>
+                            </ul>
+                        </li>
+                        <li role="presentation">
+                            <a href="./contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="project-sg-page">
+            <div class="container">
+                <h1>CinemaExpress</h1>
+                <h2>A full-stack movie database application</h2>
+                <p>This full-stack application is built using the MERN stack (MongoDB, Express, React, and Node.js). This application interfaces with a REST API to provide users with access to information about different movies, directors, and genres. Users are also able to create and manage their accounts.</p>
+                <div class="project-container">
+                    <div class="project-item project-img">
+                        <img src="img/CinemaExpresHOME.png" alt="Screenshot of CinemaExpress homepage" />
+                    </div>
+                    <div class="project-item project-descr">
+                        <div class="project-inner">
+                            <h3>Project Objective</h3>
+                            <p>CinemaExpress is built to provide an engaging and user-friendly platform where movie lovers can:</p>
+                            <ul role="list">
+                                <li role="listitem">View detailed information about movies, directors, and genres</li>
+                                <li role="listitem">Filter movies by title, genre, or director</li>
+                                <li role="listitem">Create an account, manage their profile, and maintain a personal favorite movies list</li>
+                            </ul>
+                        </div>
+                        <div class="project-inner">
+                            <h3>Technology Behind CinemaExpress</h3>
+                            <h4>Frontend</h4>
+                            <ul role="list">
+                                <li role="listitem"><span>React</span> - For an interactive user experience</li>
+                                <li role="listitem"><span>Redux</span> - For efficient state management</li>
+                                <li role="listitem"><span>React Router</span> - For seamless navigation</li>
+                                <li role="listitem"><span>Bootstrap 5.3 and SASS</span> - For responsive styling and UI components</li>
+                                <li role="listitem"><span>Parcel</span> - Fast and efficient bundling</li>
+                                <li role="listitem"><span>Netlify</span> - For frontend deployment</li>
+                            </ul>
+                            <h4>Backend</h4>
+                            <ul role="list">
+                                <li role="listitem"><span>NODE.JS [&] Express</span> - Backend framework for handling requests</li>
+                                <li role="listitem"><span>JWT [&] PASSPORT.JS</span> - Secure authentication and user sessions</li>
+                                <li role="listitem"><span>MONGODB [&] MONGOOSE</span> - NoSQL database for storing movie/user data</li>
+                                <li role="listitem"><span>MONGODB ATLAS</span> - Cloud database hosting</li>
+                                <li role="listitem"><span>CORS</span> - Enables cross-origin API access</li>
+                                <li role="listitem"><span>HEROKU</span> - Deployment and hosting of the API</li>
+                            </ul>
+                        </div>
+                        <div class="project-inner">
+                            <h3>Challenges [&] Growth</h3>
+                            <p>Developing CinemaExpress all a entire web application creating the API database and using a lot of new technologies created a long a very challenging process. Pushing my self through the many challenges I faced throughout the development of this app has enhanced my problem solving skills and knowlege with a many new technologies. </p>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <div class="button__link project__button">
+                            <a href="https://github.com/ccashley12/CinemaExpress" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View the CinemaExpress API source code on GitHub">CinemaExpress on GitHub</a>
+                        </div>
+                        <div class="button__link project__button">
+                            <a href="https://cinemaexpress.netlify.app/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Visit the live CinemaExpress API">Live Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="container">
+                <p>Find me on</p>
+                <div class="social-media">
+                        <a href="https://github.com/ccashley12" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"
+                                alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"
+                            rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
