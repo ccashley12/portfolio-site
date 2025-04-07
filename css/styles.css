@@ -102,7 +102,7 @@ h5 {
 }
 
 a {
-	color: var(--accent-color);
+	color: var(--secondary-color);
 	border-bottom: 1px solid;
 	text-decoration: none;
 	transition:
