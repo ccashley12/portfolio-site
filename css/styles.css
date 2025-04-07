@@ -153,6 +153,15 @@ button,
 	background-color: var(--accent-color);
 	display: inline-block;
 	text-align: center;
+    padding: var(--standard-padding);
+	border-radius: 5px;
+	text-transform: uppercase;
+	border: 2px solid var(--secondary-color);
+	margin: var(--standard-margin) 0;
+	box-shadow: 4px 6px var(--secondary-color);
+    transition:
+		opacity 0.2s ease-in,
+		box-shadow 0.3s ease;
 }
 
 .button__link a {
@@ -728,6 +737,7 @@ textarea:focus-visible {
         min-width: auto;
         min-height: auto;
         margin: 0;
+        text-align: center;
         -webkit-transition: -webkit-transform 0.2s ease;
         transition: -webkit-transform 0.2s ease;
         transition: transform 0.2s ease;
