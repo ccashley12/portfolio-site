@@ -286,7 +286,7 @@ button:active,
 .nav-dropdown > a::after {
 	content: '›';
 	font-size: 20px;
-	color: var(--accent-color);
+	color: var(--secondary-color);
 	position: absolute;
 	right: 5px;
 	top: 45%;
