@@ -284,6 +284,7 @@ button:active,
 	text-decoration: none;
 	display: block;
 	padding: 5px 10px;
+    transition: 0.3s ease-in-out;
 }
 .navigation-list li .dropdown-menu a {
 	font-weight: 400;
@@ -291,6 +292,7 @@ button:active,
 
 .nav-dropdown:hover .dropdown-menu {
 	display: block;
+    transition: 0.3s ease-in-out;
 }
 .nav-dropdown > a {
 	position: relative;
