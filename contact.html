@@ -18,6 +18,7 @@
 <body>
     <header class="page-header">
         <div class="container">
+            <img id="theme-logo" src="img/christopher-ashley-logo.png" alt="Christopher's personal logo" class="logo page-header__item">
             <!-- Hamburger Menu (Mobile) -->
             <button id="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation">
                 <span class="bar"></span>
@@ -52,44 +53,59 @@
             </nav>
         </div>
     </header>
-    <main class="contact-profile">
-        <h1>Christopher Ashley</h1>
-        Atlanta, Georgia
-        <br>
-        <br>
-        Tel: <a href="tel:+12055429489">205-542-9489</a>
-        <br>
-        LinkedIn: <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"> LinkedIn</a>
-        <br>
-        Email: <a href="mailto:ccashley12@gmail.com">ccashley12@gmail.com</a>
-        <br>
-        <br>
-        <a href="mailto:ccashley12@gmail.com">Contact Me</a>
-        <br>
-        <br>
-        <form action="#" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">Email: </label>
-            <input type="email" id="contact-email" required>
-            <br>
-            <br>
-            <label class="standard-label" for="contact-telephone">Telephone: </label>
-            <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-            <br>
-            <br>
-            <label class="standard-label" for="message">Message: </label>
-            <textarea id="message" maxlength="240" required></textarea>
-            <br>
-            <br>
-            <button>Send Message</button>
-        </form>
+    <main class="contact-page">
+        <div class="container">
+            <h1>Contact me</h1>
+            <form action="https://formspree.io/f/mkgjprqz" method="post" id="contact_form">
+                <div class="contact_top">
+                    <label for="contact_message">Message:</label>
+                    <textarea rows="10" cols="60" name="contact_message" id="contact_message"
+                        onfocus="this.placeholder=''" onblur="this.placeholder='Your message...'"></textarea>
+                </div>
+                <div class="contact_bottom">
+                    <div class="contact_info">
+                        <label for="contact_name">Name:</label>
+                        <input type="text" id="contact_name" name="contact_name">
+                    </div>
+                    <div class="contact_info">
+                        <label for="contact_email">Email (required):</label>
+                        <input type="email" id="contact_email" name="contact_email" required>
+                    </div>
+                    <button type="submit" value="Send message"> Send message </button>
+                </div>
+            </form>
+            <address>
+                <div class="contact-address">
+                    <h3> Christopher Ashley </h3>
+                    <p>Based in Atlanta, Georgia - USA </p>
+                </div>
+                <h5> Connect with me: </h5>
+                <div class="contact-links">
+                    <span>
+                        <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit Christopher's LinkedIn profile">
+                            <img src="img/linkedin.svg" alt="LinkedIn icon linking to Christopher's LinkedIn profile">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/ccashley12" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Christopher's GitHub profile">
+                            <img src="img/github.svg" alt="GitHub icon linking to Christopher's GitHub profile">
+                        </a>
+                    </span>
+                </div>
+            </address>
+        </div>
     </main>
     <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="https://github.com/ccashley12" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"
-                    alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"
-                rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <div class="container">
+            <p>Find me on</p>
+            <div class="social-media">
+                    <a href="https://github.com/ccashley12" target="_blank" rel="noopener noreferrer"><img src="img/github.svg"
+                            alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank"
+                        rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+            </div>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
