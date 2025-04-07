@@ -546,15 +546,47 @@ button:active,
 	text-transform: uppercase;
 }
 
+/* CinemaExpress code for specific layout */
+.project-inner-obj {
+    flex: 1;
+	padding: var(--standard-margin);
+}
+
+.project-descr-Cinema ul {
+	text-align: center;
+	list-style: none;
+	padding-left: var(--standard-margin);
+}
+
+.project-descr-Cinema li {
+	margin: auto 0;
+	position: relative;
+}
+
+.project-descr-Cinema li::before {
+    content: '•';
+	color: var(--secondary-color);
+	position: relative;
+	left: -20px;
+}
+
 .project-inner-tech {
+    flex: 1;
+	padding: var(--standard-margin);
+}
+
+.project-tech-class {
     display: flex;
-    padding: var(--standard-margin);
+    align-items: center;
+    justify-content: space-around;
 }
 
 .project-inner-inside {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
+/* END of CinemaExpress code for specific layout */
 
 .project-inner {
 	flex: 1;
