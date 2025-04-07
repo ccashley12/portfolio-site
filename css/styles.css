@@ -548,8 +548,12 @@ button:active,
 
 .project-inner-tech {
     display: flex;
-    flex-direction: row;
     padding: var(--standard-margin);
+}
+
+.project-inner-inside {
+    display: flex;
+    flex-direction: row;
 }
 
 .project-inner {
