@@ -481,30 +481,6 @@ button:active,
 	background-size: cover;
 }
 
-.LinkUp {
-	background-image: url(../img/LinkUp.png);
-}
-
-.CinemaExpress {
-	background-image: url(../img/CinemaExpresHOME.png);
-}
-
-.Pokedex {
-	background-image: url(../img/Pokedex.png);
-}
-
-.CinemaExpress-API {
-	background-image: url(../img/CinemaExpressAPI.png);
-}
-
-.PING {
-	background-image: url(../img/PING.png);
-}
-
-.Flix {
-	background-image: url(../img/Flix.png);
-}
-
 .work-list__inner {
 	position: relative;
 }
@@ -683,7 +659,7 @@ textarea:focus-visible {
 .page-footer {
 	margin-top: 30px;
 	padding: var(--small-mp);
-	background-color: var(--secondary-color);
+	background-color: var(--primary-color);
 }
 
 .page-footer .container {
@@ -702,10 +678,6 @@ textarea:focus-visible {
 	height: 30px;
 	padding: 0 5px;
 	align-items: flex-end;
-}
-body[data-theme='light'] .social-media img,
-body[data-theme='light'] .contact-links img {
-	filter: invert(1);
 }
 
 .social-media a,
