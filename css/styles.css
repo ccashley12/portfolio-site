@@ -156,7 +156,7 @@ button,
 }
 
 .button__link a {
-	color: var(--accent-color);
+	color: var(--secondary-color);
 	border-bottom: none;
 }
 
