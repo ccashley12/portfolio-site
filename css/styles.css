@@ -156,7 +156,7 @@ button,
 }
 
 .button__link a {
-	color: var(--accent-color);
+	color: var(--secondary-color);
 	border-bottom: none;
 }
 
@@ -256,7 +256,7 @@ button:active,
 	padding: 10px;
 	top: 30px;
 	left: 0;
-	background: var(--secondary-color);
+	background: var(--accent-color);
 	text-align: left;
 	transition: 0.3s ease-in-out;
 }
@@ -266,7 +266,7 @@ button:active,
 }
 
 .dropdown-menu a {
-	color: var(--secondary-color);
+	color: var(--accent-color);
 	text-decoration: none;
 	display: block;
 	padding: 5px 10px;
