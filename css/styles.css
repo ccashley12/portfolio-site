@@ -151,6 +151,8 @@ button,
 
 .button__link {
 	background-color: var(--accent-color);
+    font-family: var(--secondary-font);
+    font-size: var(--text);
 	display: inline-block;
 	text-align: center;
     padding: var(--standard-padding);
@@ -295,7 +297,7 @@ button:active,
 .nav-dropdown > a::after {
 	content: '›';
 	font-size: 20px;
-	color: var(--secondary-color);
+	color: var(--accent-color);
 	position: absolute;
 	right: 5px;
 	top: 45%;
