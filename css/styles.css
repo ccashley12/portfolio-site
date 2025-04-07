@@ -530,7 +530,7 @@ button:active,
 }
 
 .project-descr li {
-	margin: 10px 0;
+	margin: auto 0;
 	position: relative;
 }
 
@@ -544,6 +544,10 @@ button:active,
 .project-descr span {
 	font-weight: 600;
 	text-transform: uppercase;
+}
+
+.project-inner-tech {
+    flex-direction: row;
 }
 
 .project-inner {
