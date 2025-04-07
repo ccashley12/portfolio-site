@@ -266,7 +266,7 @@ button:active,
 }
 
 .dropdown-menu a {
-	color: var(--accent-color);
+	color: var(--secondary-color);
 	text-decoration: none;
 	display: block;
 	padding: 5px 10px;
