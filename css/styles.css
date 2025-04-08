@@ -173,6 +173,28 @@ button:active,
 	box-shadow: none;
 }
 
+.about-page a {
+    background-color: var(--accent-color);
+	color: var(--secondary-color);
+	font-family: var(--primary-font);
+	display: inline-block;
+	font-size: var(--text);
+	line-height: 1;
+	text-decoration: none;
+	padding: var(--standard-padding);
+	border-radius: 5px;
+	text-transform: uppercase;
+	border: 2px solid var(--secondary-color);
+	margin: var(--standard-margin) 0;
+	box-shadow: 4px 6px var(--secondary-color);
+}
+
+.about-page a:hover {
+    cursor: pointer;
+	opacity: 0.8;
+	box-shadow: 3px 5px var(--secondary-color);
+}
+
 /* HEADER */
 .page-header {
 	width: 100%;
@@ -239,7 +261,7 @@ button:active,
 .navigation-list li a:focus,
 .contact-links a:hover,
 .contact-links a:focus {
-	animation: pulsate 1s ease infinite !important;
+	animation: pulsate 2s ease infinite !important;
 }
 
 .main-navigation .navigation-list li a.navigation-list__item--active {
