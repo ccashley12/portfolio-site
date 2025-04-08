@@ -1,7 +1,7 @@
 /*
 Colors used
 Text color #D9D9D9 & #2A2A2A
-Primary color #FBFBF1
+Primary color #F5F5DC
 Secondary color #2A2A2A
 Accent color #D5EC51
 
@@ -11,7 +11,7 @@ h1 (Gloock 400)
 */
 
 :root {
-    --primary-color: #FBFBF1;
+    --primary-color: #F5F5DC;
     --secondary-color:#2A2A2A;
     --accent-color: #D5EC51;
     --primary-font: 'Marcellus', serif;
@@ -25,7 +25,7 @@ h1 (Gloock 400)
     --h1-font-weight: 600;
     --h1-line-height: 2;
     --text: 16px;
-	--h1: 70px;
+	--h1: 60px;
 	--h2: 45px;
 	--h3: 35px;
 	--h4: 30px;
@@ -226,6 +226,8 @@ button:active,
 	display: flex;
 	justify-content: center;
 	z-index: 1000000;
+    border-bottom: #2A2A2A;
+    border-radius: 2px;
 }
 
 .navigation-list {
@@ -277,6 +279,7 @@ button:active,
 	display: none;
 	position: absolute;
 	list-style: none;
+	border: 2px solid var(--secondary-color);
 	padding: 10px;
 	top: 30px;
 	left: 0;
@@ -769,12 +772,6 @@ textarea:focus-visible {
 .social-media a:active,
 .contact-links a:active {
 	opacity: 0.3;
-}
-
-.back-to-top {
-    max-width: 50%;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .error-message {
