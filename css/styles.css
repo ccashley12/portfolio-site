@@ -41,7 +41,7 @@ h1 (Gloock 400)
     --medium-margin: 40px;
 	--standard-margin: 20px;
 	--standard-padding: 10px;
-	--small-mp: 5px;
+	--small-padding: 5px;
 }
 
 * {
@@ -55,6 +55,11 @@ body {
     font-weight: var(--body-font-weight);
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
 }
 
 .container {
@@ -251,7 +256,7 @@ button:active,
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
-	padding: var(--small-mp);
+	padding: var(--small-padding);
 	transition:
 		transform 0.3s ease-in-out,
 		opacity 0.2s ease;
@@ -677,7 +682,7 @@ label {
 	text-align: left;
 }
 .contact_info {
-	margin: var(--small-mp) 0;
+	margin: var(--small-padding) 0;
 	text-align: right;
 }
 .contact-address p {
@@ -730,7 +735,7 @@ textarea:focus-visible {
 /* FOOTER */
 .page-footer {
 	margin-top: 30px;
-	padding: var(--small-mp);
+	padding: var(--small-padding);
 	background-color: var(--primary-color);
 }
 
@@ -896,7 +901,7 @@ textarea:focus-visible {
 
 	.work-list__item {
 		width: 100%;
-		margin: var(--small-mp) auto;
+		margin: var(--small-padding) auto;
 		min-height: auto;
 	}
 	.project-descr {
@@ -967,6 +972,6 @@ textarea:focus-visible {
 		margin-right: 0;
 	}
 	.navigation-list li {
-		margin: var(--small-mp) 0;
+		margin: var(--small-padding) 0;
 	}
 }
