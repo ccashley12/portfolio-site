@@ -231,8 +231,6 @@ button:active,
 	display: flex;
 	justify-content: center;
 	z-index: 1000000;
-    border-bottom: #2A2A2A;
-    border-radius: 2px;
 }
 
 .navigation-list {
@@ -242,9 +240,6 @@ button:active,
 	align-items: center;
 	padding: 0;
 	margin: 0 70px 0 0;
-    transition:
-		transform 0.3s ease-in-out,
-		opacity 0.2s ease;
 }
 
 .navigation-list li {
@@ -302,7 +297,6 @@ button:active,
 	text-decoration: none;
 	display: block;
 	padding: 5px 10px;
-    transition: 0.3s ease-in-out;
 }
 .navigation-list li .dropdown-menu a {
 	font-weight: 400;
@@ -310,7 +304,6 @@ button:active,
 
 .nav-dropdown:hover .dropdown-menu {
 	display: block;
-    transition: 0.3s ease-in-out;
 }
 .nav-dropdown > a {
 	position: relative;
