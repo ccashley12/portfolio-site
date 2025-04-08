@@ -178,6 +178,7 @@ button:active,
 	box-shadow: none;
 }
 
+/* About page CV buttton */
 .about-page a {
     background-color: var(--accent-color);
 	color: var(--secondary-color);
@@ -246,8 +247,7 @@ button:active,
 	margin-left: 15px;
 }
 
-.navigation-list li a,
-.contact-links a {
+.navigation-list li a {
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -255,7 +255,6 @@ button:active,
 	transition:
 		transform 0.3s ease-in-out,
 		opacity 0.2s ease;
-	border: none;
 	display: inline-block;
 }
 
@@ -298,6 +297,7 @@ button:active,
 	display: block;
 	padding: 5px 10px;
 }
+
 .navigation-list li .dropdown-menu a {
 	font-weight: 400;
 }
@@ -437,10 +437,10 @@ button:active,
 
 /* ABOUT */
 .christopher_img {
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
-	border: 2px solid var(--accent-color);
+	border: 2px solid var(--secondary-color);
 	object-fit: cover;
 	object-position: 50% 30%;
 	animation: 1s border-pulsate infinite alternate ease-in-out;
