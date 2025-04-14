@@ -1117,7 +1117,7 @@ body[data-theme='dark'] .contact-links img {
 	}
     .logo {
         width: 250px;
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 }
