@@ -219,10 +219,10 @@ button:active,
 	text-decoration: none;
 }
 
-.logo-link {
+/* .logo-link {
 	border: 0 none;
 	text-decoration: none;
-}
+} */
 
 body[data-theme='dark'] .page-header {
     background-color: var(--secondary-color);
