@@ -1115,9 +1115,12 @@ body[data-theme='dark'] .contact-links img {
 	.page-footer .container {
 		flex-flow: column nowrap;
 	}
+}
+
+@media (max-width: 480px) {
     .logo {
         width: 250px;
-        max-width: auto;
+        max-width: 100%;
         height: auto;
     }
 }
