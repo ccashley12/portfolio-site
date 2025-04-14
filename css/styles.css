@@ -216,7 +216,7 @@ button:active,
 }
 
 .page-header a img {
-    text-decoration:none
+    text-decoration:none;
 }
 
 body[data-theme='dark'] .page-header {
