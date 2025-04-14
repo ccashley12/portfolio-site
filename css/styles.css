@@ -215,8 +215,7 @@ button:active,
 	position: relative;
 }
 
-.page-header a img,
-.logo-link img {
+.logo-link a img {
 	border: 0 none;
 	text-decoration: none;
 }
