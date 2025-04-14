@@ -215,7 +215,11 @@ button:active,
 	position: relative;
 }
 
-.logo-link a img {
+.page-header a .logo-link {
+	text-decoration: none;
+}
+
+.logo-link {
 	border: 0 none;
 	text-decoration: none;
 }
