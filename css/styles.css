@@ -61,14 +61,14 @@ body {
 	position: relative;
 }
 
-body[data-theme='dark'] {
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
-}
-
 body[data-theme='light'] {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
+}
+
+body[data-theme='dark'] {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
 }
 
 .container {
@@ -215,7 +215,7 @@ button:active,
 	position: relative;
 }
 
-a img {
+.page-header a img {
     text-decoration:none;
 }
 
