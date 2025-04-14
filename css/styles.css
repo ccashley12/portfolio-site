@@ -215,8 +215,10 @@ button:active,
 	position: relative;
 }
 
-.logo-link {
-    text-decoration:none;
+.page-header a img,
+.logo-link img {
+	border: 0 none;
+	text-decoration: none;
 }
 
 body[data-theme='dark'] .page-header {
