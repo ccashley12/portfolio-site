@@ -234,6 +234,7 @@ body[data-theme='dark'] .page-header {
 	max-width: 100%;
 	height: auto;
 }
+
 .main-navigation {
 	flex-grow: 1;
 	display: flex;
@@ -523,6 +524,10 @@ body[data-theme='dark'] .hamburger-menu .bar {
 	object-fit: cover;
 	object-position: 50% 30%;
 	animation: 1s border-pulsate infinite alternate ease-in-out;
+}
+
+body[data-theme='dark'] .christopher_img {
+    border: 2px solid var(--accent-color);
 }
 
 .about-page h1 {
@@ -1110,6 +1115,11 @@ body[data-theme='dark'] .contact-links img {
 	.page-footer .container {
 		flex-flow: column nowrap;
 	}
+    .logo {
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media all and (max-width: 350px) {
