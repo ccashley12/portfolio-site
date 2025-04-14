@@ -215,6 +215,10 @@ button:active,
 	position: relative;
 }
 
+.page-header a img {
+    text-decoration:none
+}
+
 body[data-theme='dark'] .page-header {
     background-color: var(--secondary-color);
 }
