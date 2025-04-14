@@ -1,58 +1,61 @@
-(function() {
-    let form = document.querySelector('#contact-form');
-    let emailInput = document.querySelector('#contact-email');
+function toggle_light_theme() {
+	var app = document.body;
+	var logo = document.getElementById('theme-logo');
+	var toggleSwitch = document.getElementById('toggle');
+	var currentTheme = sessionStorage.getItem('theme') || 'dark'; // Default to dark
 
-    function showErrorMessage(input, message) {
-        let container = input.parentElement;
+	// Toggle the theme
+	var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+	app.setAttribute('data-theme', newTheme);
 
-        // Remove existing error
-        let error = container.querySelector('.error-message');
-        if (error) {
-            container.removeChild(error);
-        }
+	// Update logo
+	if (logo) {
+		var newLogoSrc =
+			newTheme === 'dark' ? logo.getAttribute('data-dark') : logo.getAttribute('data-light');
 
-        // Add error if message is not empty
-        if (message) {
-            let error = document.createElement('div');
-            error.classList.add('error-message');
-            error.innerText = message;
-            container.appendChild(error);
-        }
-    }
+		if (newLogoSrc) {
+			logo.src = newLogoSrc + '?v=' + new Date().getTime(); // Cache-busting
+		}
+	}
 
-    function validateEmail() {
-        let value = emailInput.value;
+	// Update switch position
+	toggleSwitch.checked = newTheme === 'light';
 
-        if (!value) {
-            showErrorMessage(emailInput, 'Email is a required field.');
-            return false;
-        }
+	// Store theme choice in session storage
+	sessionStorage.setItem('theme', newTheme);
+}
 
-        if (value.indexOf('@') === -1) {
-            showErrorMessage(emailInput, 'You must enter a valid email address!');
-            return false;   
-        }
+// Apply stored theme on page load
+document.addEventListener('DOMContentLoaded', function () {
+	var app = document.body;
+	var logo = document.getElementById('theme-logo');
+	var toggleSwitch = document.getElementById('toggle');
 
-        if (value.indexOf('.') === -1) {
-            showErrorMessage(emailInput, 'You must enter a valid email address!');
-            return false;
-        }
-        showErrorMessage(emailInput, null);
-        return true;
-    }
+	// Get stored theme or default to 'dark'
+	var storedTheme = sessionStorage.getItem('theme') || 'dark';
+	app.setAttribute('data-theme', storedTheme);
 
-    function validateForm() {
-        let isValidEmail = validateEmail();
-        return isValidEmail;
-    }
+	// Ensure logo updates correctly on page load
+	if (logo) {
+		var storedLogoSrc =
+			storedTheme === 'dark' ? logo.getAttribute('data-dark') : logo.getAttribute('data-light');
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        if (validateForm()) {
-            alert('Success! I will be in touch soon so stay tuned!');
-        }
-    });
+		if (storedLogoSrc) {
+			logo.src = storedLogoSrc + '?v=' + new Date().getTime(); // Cache-busting
+		}
+	}
 
-    emailInput.addEventListener('input', validateEmail);
+	// Set the toggle switch state
+	toggleSwitch.checked = storedTheme === 'light';
 
-})();
+	// Hamburger menu
+	const menuButton = document.querySelector('.hamburger-menu');
+	const navigation = document.querySelector('.main-navigation');
+
+	if (menuButton && navigation) {
+		menuButton.addEventListener('click', function () {
+			navigation.classList.toggle('active');
+			menuButton.classList.toggle('active');
+		});
+	}
+});
