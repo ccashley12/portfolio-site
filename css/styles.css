@@ -208,6 +208,7 @@ button:active,
 .page-header {
 	width: 100%;
 	height: 150px;
+	z-index: 9999;
 	padding: 15px;
 	background-color: var(--primary-color);
 	display: flex;
@@ -299,6 +300,14 @@ body[data-theme='dark'] .dropdown-menu a {
 
 .main-navigation .navigation-list li a.navigation-list__item--active {
 	font-weight: 800;
+}
+
+.home-page,
+.about-page,
+.contact-page,
+.work-page,
+.project-sg-page {
+	margin-top: 150px;
 }
 
 /* My Work dropdown menu */
