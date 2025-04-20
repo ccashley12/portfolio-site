@@ -306,7 +306,8 @@ body[data-theme='dark'] .dropdown-menu a {
 .about-page,
 .contact-page,
 .work-page,
-.project-sg-page {
+.project-sg-page,
+.case-study {
 	margin-top: 150px;
 }
 
@@ -365,6 +366,11 @@ body[data-theme='dark'] .dropdown-menu a {
 .nav-dropdown:hover > a::after,
 .nav-dropdown:focus > a::after {
 	transform: translateY(-50%) rotate(90deg);
+}
+
+/* The border seperating the case study from projects in dropdown menu */
+.casestudy {
+	border-top: 4px solid var(--secondary-color);
 }
 
 /* Hamburger Button (Mobile) */
@@ -638,10 +644,6 @@ body[data-theme='dark'] .christopher_img {
 	background-color: var(--secondary-color);
 }
 
-body[data-theme='dark'] .project-inner li::before {
-    color: var(--accent-color);
-}
-
 .grid-item {
 	background-size: cover;
 }
@@ -688,18 +690,25 @@ body[data-theme='dark'] .project-img img, .video-box video {
 	gap: 15px;
 }
 
-.project-descr ul {
+.project-descr ul,
+.cs-inner ul {
 	text-align: left;
 	list-style: none;
 	padding-left: var(--standard-margin);
 }
 
-.project-descr li {
-	margin: auto 0;
+.cs-inner ul ul {
+	margin-left: 30px;
+}
+
+.project-descr li,
+.cs-inner li {
+	margin: 10px 0;
 	position: relative;
 }
 
-.project-descr li::before {
+.project-descr li::before,
+.cs-inner li::before {
 	content: '•';
 	color: var(--secondary-color);
 	position: absolute;
@@ -712,13 +721,17 @@ body[data-theme='dark'] .project-img img, .video-box video {
 }
 
 /* CinemaExpress code for specific layout */
-.project-inner-obj {
-    flex: 1;
+.project-descr-Cinema .project-inner-obj ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	list-style-position: inside;
 	padding: var(--standard-margin);
 }
 
 .project-descr-Cinema ul {
-	text-align: center;
+	text-align: left;
 	list-style: none;
 	padding-left: var(--standard-margin);
 }
@@ -752,7 +765,7 @@ body[data-theme='dark'] .project-descr-Cinema li::before {
 
 .project-inner-inside {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-around;
 }
 /* END of CinemaExpress code for specific layout */
@@ -764,6 +777,10 @@ body[data-theme='dark'] .project-descr-Cinema li::before {
 
 .project-inner:last-child {
 	flex: 1 1 100%;
+}
+
+body[data-theme='dark'] .project-inner li::before {
+    color: var(--accent-color);
 }
 
 h4 {
@@ -781,13 +798,77 @@ video {
 	max-width: 90%;
 }
 
-.video-box label {
+.video-box label,
+.cs-inner figcaption {
 	display: block;
     text-align: center;
 	font-size: var(--text);
 	font-family: var(--primary-font);
 	letter-spacing: 1px;
 	color: var(--secondary-color);
+}
+
+/*Case Study*/
+.cs-inner {
+	text-align: left;
+}
+.cs-item {
+	display: block;
+}
+.cs-inner h2 {
+	letter-spacing: 3px;
+	margin: 20px 0 0;
+}
+.cs-inner h3 {
+	font-size: 25px;
+}
+.cs-inner ul {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.cs-inner ul p {
+	margin-top: 0;
+}
+.project-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 30px;
+}
+.half_width {
+	flex: 1 1 calc(50% - 30px);
+}
+.fullwidth {
+	width: 100%;
+}
+.cs-inner .half_width h3 {
+	margin-top: 50px;
+}
+.cs-inner img {
+	max-width: 90%;
+	max-height: 700px;
+	width: 700px;
+}
+.cs-inner .project-img,
+.video-box {
+	text-align: center;
+}
+.cs-inner ul {
+	padding: 10px;
+}
+
+.conclusion .video-box video {
+	border: 2px solid var(--secondary-color);
+	padding: var(--standard-padding);
+	max-width: 100%;
+}
+
+body[data-theme='dark'] .cs-inner li::before {
+    color: var(--accent-color);
+}
+
+body[data-theme='dark'] .conclusion .video-box video {
+    border: 2px solid var(--accent-color);
 }
 
 /*CONTACT*/
