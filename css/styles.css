@@ -809,6 +809,12 @@ video {
 }
 
 /*Case Study*/
+.hero-section img {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+
+}
 .cs-inner {
 	text-align: left;
 }
@@ -825,6 +831,9 @@ video {
 .cs-inner ul {
 	max-width: 900px;
 	margin: 0 auto;
+}
+.cs-inner p {
+	text-align: center;
 }
 .cs-inner ul p {
 	margin-top: 0;
