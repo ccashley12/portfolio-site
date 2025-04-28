@@ -890,9 +890,13 @@ form {
 label,
 .contact-links span {
 	color: var(--secondary-color);
-	text-transform: lowercase;
 	font-size: var(--label);
 }
+
+body[data-theme='dark'] .contact-page label {
+	color: var(--accent-color);
+}
+
 textarea,
 input {
 	border-radius: 0;
