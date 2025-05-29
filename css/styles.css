@@ -118,8 +118,6 @@ h5 {
 
 a {
 	color: var(--secondary-color);
-	border-bottom: 1px solid;
-	text-decoration: none;
 	transition:
 		opacity 0.3s ease,
 		color 0.4s ease-in;
@@ -127,6 +125,7 @@ a {
 
 a:hover,
 a:focus {
+	text-decoration: none;
 	border-bottom: none;
 }
 
@@ -216,6 +215,11 @@ button:active,
 	justify-content: space-between;
 	position: fixed;
 	top: 0;
+	border-bottom: double 4px var(--secondary-color);
+}
+
+body[data-theme='dark'] .page-header {
+	border-bottom: double 4px var(--accent-color);
 }
 
 .page-header a .logo-link {
@@ -254,22 +258,25 @@ body[data-theme='dark'] .page-header {
 	z-index: 1000000;
 }
 
-.navigation-list {
+.main-navigation .navigation-list {
 	list-style: none;
+	text-decoration: none;
 	display: flex;
 	gap: 20px;
 	align-items: center;
-	padding: 0;
+	padding: 40px;
 	margin: 0 70px 0 0;
 }
 
-.navigation-list li {
+.navigation-list li a {
 	margin-left: 15px;
+	text-decoration: none;
 }
 
-.navigation-list li a,
+.navigation-list a,
 .contact-links a {
 	text-transform: uppercase;
+	text-decoration: none;
 	font-weight: 600;
 	letter-spacing: 1px;
 	padding: var(--small-padding);
@@ -283,7 +290,8 @@ body[data-theme='dark'] .page-header {
 .navigation-list li a:focus,
 .contact-links a:hover,
 .contact-links a:focus {
-	animation: pulsate 2s ease infinite !important;
+	transform: scale(1.1);
+	opacity: 0.8;
 }
 
 body[data-theme='dark'] .navigation-list a {
@@ -299,7 +307,13 @@ body[data-theme='dark'] .dropdown-menu a {
 }
 
 .main-navigation .navigation-list li a.navigation-list__item--active {
-	font-weight: 800;
+	font-weight: bolder;
+	border-bottom: 2px solid var(--secondary-color);
+}
+
+body[data-theme='dark'] .main-navigation .navigation-list li a.navigation-list__item--active {
+	font-weight: bolder;
+	border-bottom: 2px solid var(--accent-color);
 }
 
 .home-page,
@@ -314,10 +328,12 @@ body[data-theme='dark'] .dropdown-menu a {
 /* My Work dropdown menu */
 .nav-dropdown {
 	position: relative;
+	text-decoration: none;
 }
 
 .dropdown-menu {
 	display: none;
+	text-decoration: none;
 	position: absolute;
 	list-style: none;
 	border: 2px solid var(--secondary-color);
@@ -341,6 +357,7 @@ body[data-theme='dark'] .dropdown-menu a {
 }
 
 .navigation-list li .dropdown-menu a {
+	text-decoration: none;
 	font-weight: 400;
 }
 
@@ -370,7 +387,7 @@ body[data-theme='dark'] .dropdown-menu a {
 
 /* The border seperating the case study from projects in dropdown menu */
 .casestudy {
-	border-top: 4px solid var(--secondary-color);
+	border-top: 3px double var(--secondary-color);
 }
 
 /* Hamburger Button (Mobile) */
@@ -567,7 +584,7 @@ body[data-theme='dark'] .christopher_img {
 	list-style: none;
 }
 
-/* About page CV buttton */
+/* About page Resume buttton */
 .about-page a {
     background-color: var(--accent-color);
 	color: var(--secondary-color);
@@ -720,6 +737,7 @@ body[data-theme='dark'] .project-img img, .video-box video {
 	text-transform: uppercase;
 }
 
+/*----------------------------------------*/
 /* CinemaExpress code for specific layout */
 .project-descr-Cinema .project-inner-obj ul {
 	display: flex;
@@ -769,6 +787,7 @@ body[data-theme='dark'] .project-descr-Cinema li::before {
     justify-content: space-around;
 }
 /* END of CinemaExpress code for specific layout */
+/*-----------------------------------------------*/
 
 .project-inner {
 	flex: 1;
@@ -1063,10 +1082,12 @@ body[data-theme='dark'] .contact-links img {
 
 @media all and (max-width: 992px) {
 	.main-navigation {
+		text-decoration: none;
 		text-align: center;
 	}
 
 	.navigation-list li a {
+		text-decoration: none;
 		letter-spacing: 0;
 	}
 
@@ -1094,6 +1115,7 @@ body[data-theme='dark'] .contact-links img {
 
 	.main-navigation {
 		display: none;
+		text-decoration: none;
 		flex-direction: column;
 		position: absolute;
 		top: 100%;
