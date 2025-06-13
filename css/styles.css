@@ -694,13 +694,17 @@ body[data-theme='dark'] .project-link h2 {
 }
 
 .project-img img,
-.video-box video {
+.PING-video-box video {
 	border: 2px solid var(--secondary-color);
 	padding: var(--standard-padding);
 	max-width: 100%;
 }
 
-body[data-theme='dark'] .project-img img, .video-box video {
+body[data-theme='dark'] .project-img img {
+	border: 2px solid var(--accent-color);
+}
+
+body[data-theme='dark'] .PING-video-box video {
 	border: 2px solid var(--accent-color);
 }
 
