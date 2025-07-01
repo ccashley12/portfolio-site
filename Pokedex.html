@@ -96,9 +96,132 @@
                                 <li role="listitem"><span>GITHUB PAGES</span> - Hosts the application</li>
                             </ul>
                         </div>
-                        <div class="project-inner">
-                            <h3>Challenges [&] Growth</h3>
-                            <p>This was my first app working with JavaScript and integrating an API. This project introduced me to working with real-time data and integrating APIs dynamically. It was a valuable learning experience that pushed me to think beyond static web pages and into interactive application development. </p>
+                    </div>
+                    <div class="case-study">
+                        <div class="container">
+                            <!-- Introduction Section -->
+                            <section class="introduction cs-item">
+                                <h1>Case Study – Pokedex</h1>
+                                <h2>Introduction</h2>
+                                <div class="cs-inner">
+                                    <h3>Project Overview</h3>
+                                    <p>
+                                        Pokedex is a browser-based JavaScript application that lets users view and explore a list of Pokémon from an external API.
+                                        As soon as the page loads, users are presented with a dynamic grid of Pokémon. Clicking any Pokémon opens a detailed modal view showing stats, types, and an image.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Project Type: Personal / Portfolio
+                                        </li>
+                                        <li>
+                                            Duration: 1 week
+                                        </li>
+                                        <li>
+                                            Tech Stack: HTML, CSS, Vanillla JavaScript, PokéAPI
+                                        </li>
+                                        <li>
+                                            Role: Solo developer - responsible for design, development, and QA
+                                        </li>
+                                        <li>
+                                            Key Features: API integration, modal UI, ESLint formatting, fully brower-compatible
+                                        </li>
+                                    </ul>
+                                    <figure class="project-img">
+                                        <img src="img/PokedexCS.png" alt="Screenshot of Pokedex homepage and single pokemon" />
+                                        <figcaption>Screenshot showing the homepage and an individual modal with Pokemon specs.</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <!-- Process Section -->
+                            <section class="process cs-item">
+                                <h2>Process & Approach</h2>
+                                <div class="cs-inner">
+                                    <h3>Planning & Architecture</h3>
+                                    <p>
+                                        I structured the app around two main features:
+                                    </p>
+                                    <ul>
+                                        <li>A responsive grid that displays Pokémon fetched from the PokéAPI.</li>
+                                        <li>A modal window that presents detailed info on a selected Pokémon.</li>
+                                    </ul>
+                                    <p>
+                                        This architecture ensured clarity, modularity, and scalability from the start.
+                                    </p>
+                                    <h3>API Integration</h3>
+                                    <p>
+                                        I loaded the first 150 Pokémon from PokéAPI. 
+                                        When a user clicks on a Pokémon, another fetch request retrieves additional details for the modal view.
+                                    </p>
+                                    <h3>Interactive UI & Modal Pattern</h3>
+                                    <ul>
+                                        <li>Modal displays a Pokémon's name, image, type(s), and basic stats.</li>
+                                        <li>Styled with CSS transitions and responsive design.</li>
+                                        <li>Accessible: closes via click, ESC key, or keyboard navigation.</li>
+                                    </ul>
+                                    <h3>Styling & UX</h3>
+                                    <ul>
+                                        <li>Custom CSS Grid for layout and spacing.</li>
+                                        <li>Buttons styled consistently across browsers.</li>
+                                        <li>Hover/focus states and animations for better interactivity.</li>
+                                        <li>Basic CSS reset to ensure cross-browser visual consistency.</li>
+                                    </ul>
+                                    <h3>Code Quality & Linting</h3>
+                                    <p>
+                                        I used ESLint to enforce JavaScript best practices:
+                                    </p>
+                                    <ul>
+                                        <li>Clean, modular functions</li>
+                                        <li>No unused variables or inline styles.</li>
+                                        <li>Easy to maintain and scale</li>
+                                    </ul>
+                                    <h3>Browser Compatibility</h3>
+                                    <p>
+                                        Tested in:
+                                    </p>
+                                    <ul>
+                                        <li>Chrome</li>
+                                        <li>Firefox</li>
+                                        <li>Safari</li>
+                                        <li>Edge</li>
+                                    </ul>
+                                    <p>
+                                        No polyfills needed - all logic written eith ES6 compatibility in mind.
+                                    </p>
+                                </div>
+                            </section>
+                            <!-- Conclusion Section -->
+                            <section class="conclusion cs-item">
+                                <h2>Conclusion</h2>
+                                <div class="cs-inner">
+                                    <h3>Final Outcome</h3>
+                                    <p>The final product is a fully responsive and interactive Pokémon browser that delivers a smooth, user-friendly experience across all modern devices. 
+                                        It features a clean, accessible modal for viewing detailed Pokémon information, ensuring both functionality and ease of use. 
+                                        Built entirely with vanilla JavaScript, the app is lightweight, fast, and free of external frameworks.</p>
+                                </div>
+                                <div class="video-box">
+                                    <video id="video" controls aria-labelledby="video-label">
+                                        <source src="img/Pokedex Recording .mp4" type="video/mp4" /> Your browser does not support the
+                                        video tag.
+                                    </video>
+                                    <label id="video-label" for="video">Demonstration Video - Press play to watch</label>
+                                </div>
+                                <div class="cs-inner project-flex">
+                                    <div class="half-width">
+                                        <h3>Challenges [&] Growth</h3>
+                                        <p>Through this project, I learned how to architect a clean and accessible modal UI using JavaScript and CSS, with attention to both functionality and user experience. 
+                                            I gained a deeper understanding of writing modular, reusable functions to keep the codebase organized and maintainable. 
+                                            Following ESLint rules from the start helped me write cleaner, more consistent code, and I saw firsthand how small details—like loading indicators and keyboard support—can significantly enhance the overall user experience.</p>
+                                    </div>
+                                    <div class="half_width">
+                                        <h3>Future Directions</h3>
+                                        <ul>
+                                            <li>Add search and filtering functionality</li>
+                                            <li>Implement lazy loading for images</li>
+                                            <li>Explore TypeScript integration for stronger type safety</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                     <div class="btn-box">

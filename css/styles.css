@@ -385,11 +385,6 @@ body[data-theme='dark'] .main-navigation .navigation-list li a.navigation-list__
 	transform: translateY(-50%) rotate(90deg);
 }
 
-/* The border seperating the case study from projects in dropdown menu */
-.casestudy {
-	border-top: 3px double var(--secondary-color);
-}
-
 /* Hamburger Button (Mobile) */
 .hamburger-menu {
 	display: none;
@@ -700,6 +695,15 @@ body[data-theme='dark'] .project-link h2 {
 	max-width: 100%;
 }
 
+.PING-video-box label {
+	font-size: var(--text);
+	text-align: center;
+}
+
+body[data-theme='dark'] .PING-video-box label {
+	color: var(--lighter-font-color);
+}
+
 body[data-theme='dark'] .project-img img {
 	border: 2px solid var(--accent-color);
 }
@@ -736,7 +740,7 @@ body[data-theme='dark'] .PING-video-box video {
 .cs-inner li::before {
 	content: '•';
 	color: var(--secondary-color);
-	position: absolute;
+	position: relative;
 	left: -20px;
 }
 
@@ -745,15 +749,19 @@ body[data-theme='dark'] .PING-video-box video {
 	text-transform: uppercase;
 }
 
+body[data-theme='dark'] figcaption {
+	color: var(--lighter-font-color);
+}
+
 /*----------------------------------------*/
 /* CinemaExpress code for specific layout */
 .project-descr-Cinema .project-inner-obj ul {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-around;
-	text-align: center;
+	text-align: left;
 	list-style-position: inside;
-	padding: var(--standard-margin);
 }
 
 .project-descr-Cinema ul {
@@ -835,6 +843,10 @@ video {
 	color: var(--secondary-color);
 }
 
+body[data-theme='dark'] .video-box label {
+	color: var(--lighter-font-color);
+}
+
 /*Case Study*/
 .hero-section img {
 	display: block;
@@ -855,9 +867,12 @@ video {
 .cs-inner h3 {
 	font-size: 25px;
 }
-.cs-inner ul {
+.cs-inner ul li {
 	max-width: 900px;
 	margin: 0 auto;
+	list-style-position: inside;
+	text-indent: -1em;
+    padding-left: 1em;
 }
 .cs-inner p {
 	text-align: center;
@@ -888,9 +903,6 @@ video {
 .cs-inner .project-img,
 .video-box {
 	text-align: center;
-}
-.cs-inner ul {
-	padding: 10px;
 }
 
 .conclusion .video-box video {

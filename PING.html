@@ -96,17 +96,135 @@
                                 <li role="listitem"><span>Firebase Authentication</span> - Secure user login</li>
                             </ul>
                         </div>
-                        <div class="project-inner">
-                            <h3>Challenges [&] Growth</h3>
-                            <p>PING was my first mobile app development project. I really enjoyed learning about React Native. There were many skills learned such as creating a firebase storage for the app to cache old messages, designing the app within the JavaScript code, using mobile simulators to see the app throughout development, and lastly using Expo for testing during development. Along with these new skills there were also new challenges to overcome like not being able to use both IOS and Android simulators at the same time so I got creative with how to use both to interact with the app. This tought me technical problem solving skills I was not even aware of before.</p>
+                    </div>
+                    <div class="case-study">
+                        <div class="container">
+                            <!-- Introduction Section -->
+                            <section class="introduction cs-item">
+                                <h1>Case Study – PING</h1>
+                                <h2>Introduction</h2>
+                                <div class="cs-inner">
+                                    <h3>Project Overview</h3>
+                                    <p>
+                                        PING is a cross-platform React Native chat application designed to provide users with a real-time messaging experience, including the ability to send text messages, share images, and transmit location data. 
+                                        Developed using Expo and backed by Google Firebase, the app leverages several modern mobile development tools to create a seamless and reliable chat interface.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Project Type: This project was built as part of a mobile development course and further refined as a personal portfolio project to explore real-time communication and cross-platform development.
+                                        </li>
+                                        <li>
+                                            Duration: 2 weeks
+                                        </li>
+                                        <li>
+                                            Tech Stack: React Native, Expo, Firebase (Database, Auth, Storage), Gifted Chat
+                                        </li>
+                                        <li>
+                                            Role: Sole developer — responsible for UI design, Firebase integration, testing, and performance optimization
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        In this case study, you will learn how I designed and implemented the core features of this mobile app, navigated real-time data challenges, and ensured a smooth user experience on both Android and iOS devices.
+                                    </p>
+                                    <figure class="project-img">
+                                        <img src="img/PING.png" alt="Screenshot of Pokedex homepage and single pokemon" />
+                                        <figcaption>Screenshot showing the homescreen, chat screen, and media you can send in chat.</figcaption>
+                                    </figure>
+                                </div>
+                            </section>
+                            <!-- Process Section -->
+                            <section class="process cs-item">
+                                <h2>Process & Approach</h2>
+                                <div class="cs-inner">
+                                    <h3>Laying the Foundation with Expo & Firebase</h3>
+                                    <p>
+                                        I started by setting up the development environment using Expo, which simplified deployment and allowed me to test rapidly on both Android and iOS simulators. 
+                                        Firebase was integrated to handle several core functions:
+                                    </p>
+                                    <ul>
+                                        <li>Anonymous Authentication: Users are signed in automatically with Firebase Auth, requiring no user input.</li>
+                                        <li>Real-time Database: Chat messages are stored and synced via Cloud Firestore, updating in real time.</li>
+                                        <li>Cloud Storage: Uploaded images are stored securely and efficiently in Firebase Storage.</li>
+                                    </ul>
+                                    <h3>Implementing the Chat Interface with Gifted Chat</h3>
+                                    <p>
+                                        To streamline the user interface and reduce development overhead, I used the Gifted Chat library. 
+                                        It provided robust out-of-the-box components for chat bubbles, avatars, timestamps, and message input—all customizable.
+
+                                        <br>
+                                        <br>
+
+                                        Key functionality added:
+                                    </p>
+                                    <ul>
+                                        <li>Sending and receiving text messages.</li>
+                                        <li>Uploading and displaying image attachments.</li>
+                                        <li>Sharing real-time location data through the device's GPS</li>
+                                    </ul>
+                                    <p>
+                                        I customized Gifted Chat to support these features and connected each message type to Firebase storage and database layers.
+                                    </p>
+                                    <h3>Offline Data Storage</h3>
+                                    <p>
+                                        Using AsyncStorage, I implemented local caching so users could view previous messages even without an internet connection. 
+                                        This was critical for maintaining a consistent user experience in areas with poor connectivity.
+                                    </p>
+                                    <h3>Overcoming Development Challenges</h3>
+                                    <ul>
+                                        <li>Challenge: Managing Firebase's real-time updates alongside local state without data duplication
+                                        <br>
+                                            Solution: Used snapshot listeners with precise message deduplication logic to ensure accurate syncs.</li>
+                                        <li>Challenge: Sending images and location data reliably across devices
+                                        <br>
+                                            Solution: Created distinct upload and send flows using Firebase Storage and native location services through Expo's Location API.</li>
+                                        <li>Challenge: Ensuring performance on low-end devices
+                                        <br>
+                                            Solution: Used FlatList optimizations within Gifted Chat and minimized re-renders via memoization techniques.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <!-- Conclusion Section -->
+                            <section class="conclusion cs-item">
+                                <h2>Conclusion</h2>
+                                <div class="cs-inner">
+                                    <h3>Final Outcome</h3>
+                                    <p>The final app provides users with a smooth and reliable chat experience that supports real-time messaging, image sharing, and live location updates. 
+                                        Messages are stored in Firebase for persistence and synced across devices instantly. The UI is polished, functional, and responsive across both iOS and Android.</p>
+                                </div>
+                                <div class="cs-inner project-flex">
+                                    <div class="half-width">
+                                        <h3>Challenges [&] Growth</h3>
+                                        <p>This project deepened my understanding of real-time database interactions, Firebase service integration, and React Native UI design. 
+                                            I learned how to manage asynchronous data flows effectively and handle common mobile development pain points like network instability and device compatibility.
+                                        <br>
+                                        <br>
+                                            I also gained practical experience in:
+                                        </p>
+                                        <ul>
+                                            <li>Structuring a React Native app for scalability and reusability.</li>
+                                            <li>mplementing secure, anonymous authentication.</li>
+                                            <li>Managing cloud and local data together for a seamless user experience.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="half_width">
+                                        <h3>Future Directions</h3>
+                                        <p>
+                                            One key feature I plan to implement next is audio messaging. This will allow users to record and send voice messages directly within the chat interface—enhancing accessibility, convenience, and expressiveness in conversations.
+                                            To achieve this, I will integrate Expo's Audio API for recording and playback, and store audio files in Firebase Cloud Storage alongside existing image data. 
+                                            Audio message metadata will be saved in Firestore, just like text and image messages, to ensure real-time syncing and playback across devices.
+                                            Adding this feature will involve UI enhancements to the chat composer and careful handling of media permissions, background tasks, and file size optimizations. It's an exciting next step that will move the app closer to feature parity with modern messaging platforms.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                     <div class="PING-video-box">
-                        <label id="video-label" for="video">Demonstration Video</label>
                         <video id="video" controls aria-labelledby="video-label">
                             <source src="img/PING.webm" type="video/webm"> Your browser does not support the video
                             tag.
                         </video>
+                        <label id="video-label" for="video">Demonstration Video - Press play to watch</label>
                     </div>
                     <div class="btn-box">
                         <div class="button__link project__button">
